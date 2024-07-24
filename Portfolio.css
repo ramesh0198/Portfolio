@@ -10,10 +10,10 @@
 }
 
 :root{
-    --bg-color:#080808;
+    --bg-color:#303538;
     --second-bg-color:#131313;
     --text-color: white;
-    --main-color: #f8ec03;
+    --main-color: #9a9a9a;
 }
 html{
     font-size: 60%;
@@ -28,27 +28,30 @@ body{
     top:0;
     left: 0;
     width: 100%;
-    padding: 4rem 12% 4rem;
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
+    padding: 2rem 12% 2rem;
+    /* background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px); */
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 5;
 }
-.logo{
-    font-size: 3rem;
-    color: var(--text-color);
-    font-weight: 800;
+.logo1{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    /* box-shadow: 0 0 25px var(--main-color); */
+    filter: drop-shadow(1px 1px 20px var(--main-color));
+}
+.logo1{
     cursor: pointer;
-    transform: 0.3s ease;
+    transform: 0.5s ease;
 }
-.logo:hover{
-    transform: scale(1.1);
+.logo1:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0px 40px var(--main-color);
 }
-.logo span{
-    text-shadow: 0 0 25px var(--main-color);
-}
+
 .navbar a{
     font-size: 1.8rem;
     color: var(--text-color);
@@ -93,6 +96,10 @@ section{
 }
 span{
     color: var(--main-color);
+}
+
+span.link:hover {
+    color: rgb(64, 0, 255)
 }
 
 .logo span{
@@ -220,11 +227,11 @@ span{
     }
     21%,
     40%{
-        content: "Web Designer";
+        content: "Digital Marketer";
     }
     41%,
     60%{
-        content: "UI / UX Designer";
+        content: "Graphic Designer";
     }
     61%,
     80%{
@@ -232,7 +239,7 @@ span{
     }
     81%,
     100%{
-        content: "Software Tester";
+        content: "Backend developer";
     }
 }
 @keyframes typing {
